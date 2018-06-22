@@ -20,9 +20,12 @@ class ImageWithAssets extends StatelessWidget {
             title: Text("Playing Image From assets"),
           ),
           body: Center(
-            child: Image(image: AssetImage("dart.png"),),
-          )
-      ),
+            child: Image(
+              image: new AssetImage("assets/dart.png"),
+              width: 300.0,
+              height: 300.0,
+            ),
+          )),
     );
   }
 }
