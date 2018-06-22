@@ -21,11 +21,11 @@ class ImageFromNetwork extends StatelessWidget {
           child: Column(
             children: <Widget>[
               Image.network(
-                imgLink
+                imgLink,width: 300.0, height: 300.0
               ),
               Image.network(
                   gifImgLink
-              ),
+              ,width: 300.0, height: 300.0,),
             ],
           ),
         ),

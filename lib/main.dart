@@ -1,8 +1,12 @@
 import 'package:flutter/material.dart';
+
+//import 'package:playing_with_flutter/images/CachedImage.dart';
 //import 'package:playing_with_flutter/design/CustomFont.dart';
-import 'package:playing_with_flutter/design/DrawerDemo.dart';
-import 'package:playing_with_flutter/design/UpdateUI.dart';
-import 'package:playing_with_flutter/images/ImageFromNetwork.dart';
+//import 'package:playing_with_flutter/design/DrawerDemo.dart';
+//import 'package:playing_with_flutter/design/UpdateUI.dart';
+//import 'package:playing_with_flutter/images/ImageFade.dart';
+import 'package:playing_with_flutter/images/ImageWithAssets.dart';
+//import 'package:playing_with_flutter/images/ImageFromNetwork.dart';
 
 //import 'package:playing_with_flutter/design/SnackBarDemo.dart';
 //import 'package:playing_with_flutter/design/SnackBarDemoAgain.dart';
@@ -29,4 +33,8 @@ import 'package:playing_with_flutter/images/ImageFromNetwork.dart';
 
 //void main() => runApp(new UpdateUi());
 
-void main() => runApp(new ImageFromNetwork());
+//void main() => runApp(new ImageFade());
+
+//void main() => runApp(new CachedImage());
+
+void main() => runApp(new ImageWithAssets());
