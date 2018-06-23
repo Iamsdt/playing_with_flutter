@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:playing_with_flutter/navigation/AnimationAcrossScreens.dart';
-
+import 'package:playing_with_flutter/animation/FadeWidget.dart';
+//import 'package:playing_with_flutter/navigation/AnimationAcrossScreens.dart';
 //import 'package:playing_with_flutter/gesture/SwipeToDismiss.dart';
 //import 'package:playing_with_flutter/navigation/ComunicateWithScreens.dart';
 //import 'package:playing_with_flutter/navigation/NamedNavigation.dart';
@@ -68,4 +68,6 @@ import 'package:playing_with_flutter/navigation/AnimationAcrossScreens.dart';
 
 //void main() => runApp(new NamedNavigation());
 
-void main() => runApp(new AnimationAcrossScreens());
+//void main() => runApp(new AnimationAcrossScreens());
+
+void main() => runApp(new FadeWidget());
