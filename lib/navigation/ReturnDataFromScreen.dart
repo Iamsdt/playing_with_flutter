@@ -8,7 +8,7 @@ class HomeScreen extends StatelessWidget {
       title: "Material App",
       home: Scaffold(
         appBar: getAppBar("Home Screen"),
-        body: SelectionButton(),
+        body: Center(child: SelectionButton()),
       ),
     );
   }

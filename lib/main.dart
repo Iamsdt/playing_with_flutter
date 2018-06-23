@@ -1,8 +1,11 @@
 import 'package:flutter/material.dart';
-import 'package:playing_with_flutter/gesture/SwipeToDismiss.dart';
-import 'package:playing_with_flutter/navigation/ComunicateWithScreens.dart';
-import 'package:playing_with_flutter/navigation/NavigationBasic.dart';
-import 'package:playing_with_flutter/navigation/ReturnDataFromScreen.dart';
+import 'package:playing_with_flutter/navigation/AnimationAcrossScreens.dart';
+
+//import 'package:playing_with_flutter/gesture/SwipeToDismiss.dart';
+//import 'package:playing_with_flutter/navigation/ComunicateWithScreens.dart';
+//import 'package:playing_with_flutter/navigation/NamedNavigation.dart';
+//import 'package:playing_with_flutter/navigation/NavigationBasic.dart';
+//import 'package:playing_with_flutter/navigation/ReturnDataFromScreen.dart';
 //import 'package:playing_with_flutter/list/Grid.dart';
 //import 'package:playing_with_flutter/list/LargeList.dart';
 //import 'package:playing_with_flutter/list/MixedItem.dart';
@@ -61,4 +64,8 @@ import 'package:playing_with_flutter/navigation/ReturnDataFromScreen.dart';
 
 //void main() => runApp(new CommunicateWithScrees());
 
-void main() => runApp(new HomeScreen());
+//void main() => runApp(new HomeScreen());
+
+//void main() => runApp(new NamedNavigation());
+
+void main() => runApp(new AnimationAcrossScreens());
