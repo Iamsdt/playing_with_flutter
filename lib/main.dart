@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:playing_with_flutter/list/Grid.dart';
-import 'package:playing_with_flutter/list/LargeList.dart';
-import 'package:playing_with_flutter/list/MixedItem.dart';
+import 'package:playing_with_flutter/gesture/SwipeToDismiss.dart';
+//import 'package:playing_with_flutter/list/Grid.dart';
+//import 'package:playing_with_flutter/list/LargeList.dart';
+//import 'package:playing_with_flutter/list/MixedItem.dart';
 //import 'package:playing_with_flutter/list/MultiList.dart';
 //import 'package:playing_with_flutter/images/CachedImage.dart';
 //import 'package:playing_with_flutter/design/CustomFont.dart';
@@ -49,4 +50,6 @@ import 'package:playing_with_flutter/list/MixedItem.dart';
 
 //void main() => runApp(new MixedItem());
 
-void main() => runApp(new GridList());
+//void main() => runApp(new GridList());
+
+void main() => runApp(new SwipeToDismiss());
