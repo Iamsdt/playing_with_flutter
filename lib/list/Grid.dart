@@ -24,13 +24,15 @@ class GridList extends StatelessWidget {
                   itemBuilder: (context, index) {
                     return Container(
                       color: getRandomColor(),
-                      child: ListTile(
-                        title: Text(items[index]),
-                        onTap: () {
-                          Scaffold
-                              .of(context)
-                              .showSnackBar(getSnackBar("position:$index"));
-                        },
+                      child: Center(
+                        child: ListTile(
+                          title: Text(items[index]),
+                          onTap: () {
+                            Scaffold
+                                .of(context)
+                                .showSnackBar(getSnackBar("position:$index"));
+                          },
+                        ),
                       ),
                     );
                   });
