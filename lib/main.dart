@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:playing_with_flutter/gesture/SwipeToDismiss.dart';
+import 'package:playing_with_flutter/navigation/ComunicateWithScreens.dart';
+import 'package:playing_with_flutter/navigation/NavigationBasic.dart';
+import 'package:playing_with_flutter/navigation/ReturnDataFromScreen.dart';
 //import 'package:playing_with_flutter/list/Grid.dart';
 //import 'package:playing_with_flutter/list/LargeList.dart';
 //import 'package:playing_with_flutter/list/MixedItem.dart';
@@ -52,4 +55,10 @@ import 'package:playing_with_flutter/gesture/SwipeToDismiss.dart';
 
 //void main() => runApp(new GridList());
 
-void main() => runApp(new SwipeToDismiss());
+//void main() => runApp(new SwipeToDismiss());
+
+//void main() => runApp(new NavigatorBasic());
+
+//void main() => runApp(new CommunicateWithScrees());
+
+void main() => runApp(new HomeScreen());
