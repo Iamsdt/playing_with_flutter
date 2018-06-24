@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:playing_with_flutter/internet/ParsingJson.dart';
 import 'package:playing_with_flutter/persistence/FileDemo.dart';
 import 'package:playing_with_flutter/persistence/SP.dart';
+import 'package:playing_with_flutter/text/FromValidation.dart';
+import 'package:playing_with_flutter/text/GetInput.dart';
 //import 'package:playing_with_flutter/navigation/AnimationAcrossScreens.dart';
 //import 'package:playing_with_flutter/gesture/SwipeToDismiss.dart';
 //import 'package:playing_with_flutter/navigation/ComunicateWithScreens.dart';
@@ -83,4 +85,8 @@ import 'package:playing_with_flutter/persistence/SP.dart';
 
 //void main() => runApp(new SP());
 
-void main() => runApp(new FileDemo());
+//void main() => runApp(new FileDemo());
+
+//void main() => runApp(new GetInput());
+
+void main() => runApp(new FromValidation());
