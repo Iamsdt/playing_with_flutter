@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:playing_with_flutter/animation/FadeWidget.dart';
-import 'package:playing_with_flutter/internet/FetchData.dart';
-import 'package:playing_with_flutter/text/LoginForm.dart';
+import 'package:playing_with_flutter/internet/ParsingJson.dart';
+import 'package:playing_with_flutter/persistence/SP.dart';
 //import 'package:playing_with_flutter/navigation/AnimationAcrossScreens.dart';
 //import 'package:playing_with_flutter/gesture/SwipeToDismiss.dart';
 //import 'package:playing_with_flutter/navigation/ComunicateWithScreens.dart';
@@ -26,7 +25,6 @@ import 'package:playing_with_flutter/text/LoginForm.dart';
 //import 'package:playing_with_flutter/design/TabDemo.dart';
 //import 'package:playing_with_flutter/design/StyleDemo.dart';
 //import 'package:playing_with_flutter/text/TextDemo.dart';
-import 'package:playing_with_flutter/text/TextInput.dart';
 
 //void main() => runApp(new TextDemo());
 
@@ -78,4 +76,8 @@ import 'package:playing_with_flutter/text/TextInput.dart';
 
 //void main() => runApp(new LoginFrom());
 
-void main() => runApp(new FetchData());
+//void main() => runApp(new FetchData());
+
+//void main() => runApp(new ParsingJson());
+
+void main() => runApp(new SP());
