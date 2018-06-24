@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:playing_with_flutter/animation/FadeWidget.dart';
+import 'package:playing_with_flutter/internet/FetchData.dart';
 import 'package:playing_with_flutter/text/LoginForm.dart';
 //import 'package:playing_with_flutter/navigation/AnimationAcrossScreens.dart';
 //import 'package:playing_with_flutter/gesture/SwipeToDismiss.dart';
@@ -75,4 +76,6 @@ import 'package:playing_with_flutter/text/TextInput.dart';
 
 //void main() => runApp(new TextInput());
 
-void main() => runApp(new LoginFrom());
+//void main() => runApp(new LoginFrom());
+
+void main() => runApp(new FetchData());
