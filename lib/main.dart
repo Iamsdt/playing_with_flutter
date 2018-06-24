@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:playing_with_flutter/internet/ParsingJson.dart';
+import 'package:playing_with_flutter/persistence/FileDemo.dart';
 import 'package:playing_with_flutter/persistence/SP.dart';
 //import 'package:playing_with_flutter/navigation/AnimationAcrossScreens.dart';
 //import 'package:playing_with_flutter/gesture/SwipeToDismiss.dart';
@@ -80,4 +81,6 @@ import 'package:playing_with_flutter/persistence/SP.dart';
 
 //void main() => runApp(new ParsingJson());
 
-void main() => runApp(new SP());
+//void main() => runApp(new SP());
+
+void main() => runApp(new FileDemo());
