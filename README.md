@@ -1,8 +1,7 @@
 # playing_with_flutter
 
-A playground project
+A playground project where I practiced Cookbook of Flutter
 
-## Getting Started
-
-For help getting started with Flutter, view our online
-[documentation](https://flutter.io/).
+##Practice Cookbook
+For documentation
+[documentation](https://flutter.io/cookbook/).
