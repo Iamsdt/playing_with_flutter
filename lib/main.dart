@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:playing_with_flutter/animation/FadeWidget.dart';
+import 'package:playing_with_flutter/text/LoginForm.dart';
 //import 'package:playing_with_flutter/navigation/AnimationAcrossScreens.dart';
 //import 'package:playing_with_flutter/gesture/SwipeToDismiss.dart';
 //import 'package:playing_with_flutter/navigation/ComunicateWithScreens.dart';
@@ -24,7 +25,7 @@ import 'package:playing_with_flutter/animation/FadeWidget.dart';
 //import 'package:playing_with_flutter/design/TabDemo.dart';
 //import 'package:playing_with_flutter/design/StyleDemo.dart';
 //import 'package:playing_with_flutter/text/TextDemo.dart';
-//import 'package:playing_with_flutter/text/TextInput.dart';
+import 'package:playing_with_flutter/text/TextInput.dart';
 
 //void main() => runApp(new TextDemo());
 
@@ -70,4 +71,8 @@ import 'package:playing_with_flutter/animation/FadeWidget.dart';
 
 //void main() => runApp(new AnimationAcrossScreens());
 
-void main() => runApp(new FadeWidget());
+//void main() => runApp(new FadeWidget());
+
+//void main() => runApp(new TextInput());
+
+void main() => runApp(new LoginFrom());

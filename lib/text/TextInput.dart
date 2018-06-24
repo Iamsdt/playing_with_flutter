@@ -10,52 +10,64 @@ class TextInput extends StatelessWidget {
             title: new Text("Playing with text"),
             actions: <Widget>[
               new IconButton(
-                icon: new Icon(Icons.playlist_play,color: Colors.orange,),
+                icon: new Icon(
+                  Icons.playlist_play,
+                  color: Colors.orange,
+                ),
                 tooltip: 'Air it',
                 onPressed: null,
               ),
               new IconButton(
-                icon: new Icon(Icons.playlist_add,color: Colors.purple,),
+                icon: new Icon(
+                  Icons.playlist_add,
+                  color: Colors.purple,
+                ),
                 tooltip: 'Restitch it',
                 onPressed: null,
               ),
               new IconButton(
-                icon: new Icon(Icons.playlist_add_check,color: Colors.red,),
+                icon: new Icon(
+                  Icons.playlist_add_check,
+                  color: Colors.red,
+                ),
                 tooltip: 'Repair it',
                 onPressed: null,
               ),
             ],
           ),
           body: new Container(
-              child: new Center(
-            child: new Text("Example of scanford"),
-          )),
+            child: new Center(
+                child: TextFormField(
+              decoration: InputDecoration(labelText: 'Enter your username'),
+            )),
+          ),
           floatingActionButton: new FloatingActionButton(
             onPressed: null,
             backgroundColor: Colors.pink,
             child: new Icon(Icons.add),
             isExtended: true,
           ),
-          floatingActionButtonLocation:
-          FloatingActionButtonLocation.endFloat,
+          floatingActionButtonLocation: FloatingActionButtonLocation.endFloat,
           bottomNavigationBar: new BottomNavigationBar(
-
-              items: [
-                new BottomNavigationBarItem(
-                  icon: Icon(Icons.live_help,color: Colors.teal,),
-                  title: Text("Help",style: TextStyle(color: Colors.teal),),
+            items: [
+              new BottomNavigationBarItem(
+                icon: Icon(
+                  Icons.live_help,
+                  color: Colors.teal,
                 ),
-                new BottomNavigationBarItem(
-                    icon: Icon(Icons.share,color: Colors.cyan),
-                    title: Text("Share",style: TextStyle(color: Colors.cyan))
+                title: Text(
+                  "Help",
+                  style: TextStyle(color: Colors.teal),
                 ),
-                new BottomNavigationBarItem(
-                    icon: Icon(Icons.chat,color: Colors.yellow),
-                    title: Text("Chat",style: TextStyle(color: Colors.yellow))
-                ),
-              ],
-            ),
-          )
-          );
+              ),
+              new BottomNavigationBarItem(
+                  icon: Icon(Icons.share, color: Colors.cyan),
+                  title: Text("Share", style: TextStyle(color: Colors.cyan))),
+              new BottomNavigationBarItem(
+                  icon: Icon(Icons.chat, color: Colors.yellow),
+                  title: Text("Chat", style: TextStyle(color: Colors.yellow))),
+            ],
+          ),
+        ));
   }
 }
