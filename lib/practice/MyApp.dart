@@ -22,7 +22,7 @@ class _MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: "Splash Intro",
+      title: "My App",
       home: SplashScreen(),
       debugShowCheckedModeBanner: false,
       routes: routes,
