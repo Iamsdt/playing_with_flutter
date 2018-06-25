@@ -96,6 +96,5 @@ class _FlutterDemoState extends State<FlutterDemo> {
         child: Icon(Icons.add),
       ),
     );
-    ;
   }
 }
