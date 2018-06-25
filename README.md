@@ -45,7 +45,7 @@ App intro
 
 
 ### Eternal Libraries
-    `Shared preference`
+    Shared preference
     ````
     shared_preferences: "^0.4.2"
     ````
