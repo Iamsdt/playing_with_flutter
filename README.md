@@ -40,6 +40,7 @@ A simple app for beginners
 [sample5]: ../master/img/routes.png "Routes Screens"
 
 App intro
+
 ![App intro](../master/img/intro.gif)
 
 
