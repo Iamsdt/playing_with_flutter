@@ -24,6 +24,7 @@ class _MyApp extends StatelessWidget {
     return MaterialApp(
       title: "Splash Intro",
       home: SplashScreen(),
+      debugShowCheckedModeBanner: false,
       routes: routes,
     );
   }
