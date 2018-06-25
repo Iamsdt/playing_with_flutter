@@ -1,21 +1,24 @@
 /*
  * Developed by Shudipto Trafder.
- * on 6/25/18 12:41 PM.
+ * on 6/25/18 7:30 PM.
  * Copyright (c) Shudipto Trafder.
  */
 
 import 'dart:math';
 
 import 'package:flutter/material.dart';
+import 'package:playing_with_flutter/practice/Navigator.dart';
 
-class HomeScreen extends StatefulWidget {
+class HomeScreen extends StatelessWidget {
   @override
-  _HomeScreenState createState() => new _HomeScreenState();
+  Widget build(BuildContext context) {
+    return _HomeScreenState();
+  }
 }
 
-class _HomeScreenState extends State<HomeScreen> {
-  final items = List<_ListItem>.generate(
-      20, (i) => _ListItem("Title: $i", "Subtitle: $i"));
+class _HomeScreenState extends StatelessWidget {
+  final items =
+      List<ListItem>.generate(20, (i) => ListItem("Title: $i", "Subtitle: $i"));
 
   @override
   Widget build(BuildContext context) {
@@ -35,7 +38,6 @@ class _HomeScreenState extends State<HomeScreen> {
               onTap: () {
                 // Update the state of the app
                 // ...
-
                 Navigator.pop(context);
               },
             ),
@@ -54,6 +56,7 @@ class _HomeScreenState extends State<HomeScreen> {
                 // Update the state of the app
                 // ...
                 Navigator.pop(context);
+                MyNavigator.toRoutes(context);
               },
             ),
             Container(
@@ -85,6 +88,7 @@ class _HomeScreenState extends State<HomeScreen> {
       ),
       body: new Center(
         child: ListView.builder(
+          padding: EdgeInsets.all(8.0),
           itemCount: items.length,
           itemBuilder: (context, index) {
             return CardView(items[index]);
@@ -136,48 +140,53 @@ class _HomeScreenState extends State<HomeScreen> {
   }
 }
 
-class _ListItem {
+class ListItem {
   dynamic Title;
   dynamic SubTitle;
-  _ListItem(this.Title, this.SubTitle);
+  ListItem(this.Title, this.SubTitle);
 }
 
 class CardView extends StatelessWidget {
-  final _ListItem item;
+  final ListItem item;
 
   CardView(this.item);
 
   @override
   Widget build(BuildContext context) {
     return new Card(
-      child: Container(
-        color: getRandomColor(),
-        child: Padding(
-          padding: const EdgeInsets.all(8.0),
-          child: Row(
-            mainAxisAlignment: MainAxisAlignment.start,
-            children: <Widget>[
-              Icon(
-                getRandomIcon(),
-                size: 32.0,
-              ),
-              Padding(
-                padding: const EdgeInsets.only(left: 16.0),
-                child: Column(
-                  mainAxisAlignment: MainAxisAlignment.start,
-                  children: <Widget>[
-                    Text(
-                      item.Title,
-                      style: TextStyle(fontSize: 25.0, color: Colors.white),
-                    ),
-                    Text(
-                      item.SubTitle,
-                      style: TextStyle(fontSize: 20.0, color: Colors.black),
-                    )
-                  ],
+      child: GestureDetector(
+        onTap: () {
+          MyNavigator.toDetails(context, item);
+        },
+        child: Container(
+          color: getRandomColor(),
+          child: Padding(
+            padding: EdgeInsets.all(8.0),
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.start,
+              children: <Widget>[
+                Icon(
+                  getRandomIcon(),
+                  size: 32.0,
                 ),
-              )
-            ],
+                Padding(
+                  padding: const EdgeInsets.only(left: 16.0),
+                  child: Column(
+                    mainAxisAlignment: MainAxisAlignment.start,
+                    children: <Widget>[
+                      Text(
+                        item.Title,
+                        style: TextStyle(fontSize: 25.0, color: Colors.white),
+                      ),
+                      Text(
+                        item.SubTitle,
+                        style: TextStyle(fontSize: 20.0, color: Colors.black),
+                      )
+                    ],
+                  ),
+                )
+              ],
+            ),
           ),
         ),
       ),

@@ -1,12 +1,12 @@
 /*
  * Developed by Shudipto Trafder.
- * on 6/25/18 11:58 AM.
+ * on 6/25/18 7:30 PM.
  * Copyright (c) Shudipto Trafder.
  */
 
 import 'package:flutter/material.dart';
-import 'package:playing_with_flutter/advance/splash_intro/Intro.dart';
-import 'package:playing_with_flutter/advance/splash_intro/Navigator.dart';
+import 'package:playing_with_flutter/practice/Intro.dart';
+import 'package:playing_with_flutter/practice/Navigator.dart';
 
 class IntroScreen extends StatefulWidget {
   @override
@@ -91,7 +91,9 @@ class _IntroScreenState extends State<IntroScreen> {
                           fontWeight: FontWeight.bold,
                           fontSize: 20.0)),
                   onPressed: () =>
-                      lastPage ? null : MyNavigator.goToHome(context),
+
+                      //lastPage ? null : MyNavigator.goToHome(context),
+                      lastPage ? null : goToNextScreen(context),
                 ),
                 FlatButton(
                   child: Text(lastPage ? "Got it" : "Next",
@@ -100,7 +102,7 @@ class _IntroScreenState extends State<IntroScreen> {
                           fontWeight: FontWeight.bold,
                           fontSize: 20.0)),
                   onPressed: () => lastPage
-                      ? MyNavigator.goToHome(context)
+                      ? goToNextScreen(context)
                       : controller.nextPage(
                           duration: Duration(milliseconds: 300),
                           curve: Curves.easeIn),
@@ -111,5 +113,11 @@ class _IntroScreenState extends State<IntroScreen> {
         ],
       ),
     );
+  }
+
+  goToNextScreen(BuildContext context) {
+    //set intro finished
+    MyNavigator.setIntroFinished();
+    MyNavigator.goToHomeReplace(context);
   }
 }

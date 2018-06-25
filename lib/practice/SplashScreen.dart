@@ -1,13 +1,13 @@
 /*
  * Developed by Shudipto Trafder.
- * on 6/25/18 11:29 AM.
+ * on 6/25/18 7:30 PM.
  * Copyright (c) Shudipto Trafder.
  */
 
 import 'dart:async';
 
 import 'package:flutter/material.dart';
-import 'package:playing_with_flutter/advance/splash_intro/Navigator.dart';
+import 'package:playing_with_flutter/practice/Navigator.dart';
 
 class SplashScreen extends StatefulWidget {
   @override
@@ -70,6 +70,7 @@ class _SplashScreenState extends State<SplashScreen> {
   void initState() {
     super.initState();
     //after 2 second, show intro activity
-    Timer(Duration(seconds: 5), () => MyNavigator.goToIntro(context));
+    //Timer(Duration(seconds: 5), () => MyNavigator.goToIntro(context));
+    Timer(Duration(seconds: 5), () => MyNavigator.nextScreens(context));
   }
 }
