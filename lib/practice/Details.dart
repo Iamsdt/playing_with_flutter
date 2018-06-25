@@ -18,8 +18,11 @@ class DetailsScreen extends StatefulWidget {
 }
 
 class _DetailsScreenState extends State<DetailsScreen> {
+  BuildContext scaffoldContext;
+
   @override
   Widget build(BuildContext context) {
+    scaffoldContext = context;
     return Scaffold(
       appBar: AppBar(
         title: Text("Details Screens"),
@@ -67,24 +70,6 @@ class _DetailsScreenState extends State<DetailsScreen> {
               icon: Icon(Icons.call, color: Colors.yellow),
               title: Text("Chat", style: TextStyle(color: Colors.yellow))),
         ],
-        onTap: (int) {
-          switch (int) {
-            case 0:
-              Scaffold
-                  .of(context)
-                  .showSnackBar(SnackBar(content: Text("How can I help")));
-              break;
-            case 1:
-              Scaffold.of(context).showSnackBar(
-                  SnackBar(content: Text("You can share anywhare")));
-              break;
-            case 2:
-              Scaffold
-                  .of(context)
-                  .showSnackBar(SnackBar(content: Text("you can call us")));
-              break;
-          }
-        },
       ),
     );
   }
