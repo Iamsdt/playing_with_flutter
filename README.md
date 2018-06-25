@@ -10,12 +10,27 @@ For documentation
 I develop an app name First App in Flutter
 
 ### First App in Flutter (name of the app)
-A simple app with for practice
+A simple app for beginners
+
+### Contains
+    1. Splash Screen
+    2. Intro Screen
+        1. Page view (View pager in Android)
+    3. Main Screen
+        1. List view
+        2. Floating Action Button
+        3. Navigation Drawer
+
+    5. Details Screen
+        1.Bottom Navigation bar
+
+    6. Routes Screen
+        1. Tab bar
 
 ##### See some screenshots </br>
 
 | ![Splash Screen][sample1] | ![Main Screen][sample2] | ![Navigation Drawer][sample3] | ![Details Screen][sample4] | ![Routes][sample5] |
-|--- | --- | --- | ---|
+|--- | --- | --- | ---| ---|
 | Splash Screen | Main Screen | Navigation Drawer| Details Screen | Routes
 
 [sample1]: ../master/img/splash.png "Splash Screen"
@@ -27,13 +42,6 @@ A simple app with for practice
 App intro
 ![App intro](../master/img/intro.gif)
 
-### Contains
-    1. Splash Screen
-    2. Intro Screen
-    3. Main Screen
-    4. Navigation Drawer
-    5. Details Screen
-    6. Routes Screen (tab viewer)
 
 ### Eternal Libraries
     `Shared preference`
