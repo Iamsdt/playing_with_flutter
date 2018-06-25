@@ -13,15 +13,15 @@ void main() => runApp(_MyApp());
 
 class _MyApp extends StatelessWidget {
   final routes = <String, WidgetBuilder>{
-    "/intro": (BuildContext context) => IntroScreen(),
-    "/home": (BuildContext context) => HomeScreen()
+    "/intro": (context) => IntroScreen(),
+    "/home": (context) => HomeScreen()
   };
 
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
       title: "Splash Intro",
-      home: HomeScreen(),
+      home: SplashScreen(),
       routes: routes,
     );
   }

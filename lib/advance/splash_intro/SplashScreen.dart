@@ -70,6 +70,6 @@ class _SplashScreenState extends State<SplashScreen> {
   void initState() {
     super.initState();
     //after 2 second, show intro activity
-    Timer(Duration(seconds: 1), () => MyNavigator.goToIntro(context));
+    Timer(Duration(seconds: 5), () => MyNavigator.goToIntro(context));
   }
 }

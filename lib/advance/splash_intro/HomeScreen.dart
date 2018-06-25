@@ -26,17 +26,46 @@ class _HomeScreenState extends State<HomeScreen> {
       ),
       drawer: Drawer(
         child: ListView(
+          addRepaintBoundaries: true,
           padding: EdgeInsets.zero,
           children: <Widget>[
-            DrawerHeader(
-              duration: Duration(seconds: 1),
-              child: Text('Drawer Header'),
-              decoration: BoxDecoration(
-                color: Colors.blue,
+            getDrawerHeader(),
+            ListTile(
+              title: Text('Home'),
+              onTap: () {
+                // Update the state of the app
+                // ...
+
+                Navigator.pop(context);
+              },
+            ),
+            ListTile(
+              title: Text('Bookmark'),
+              onTap: () {
+                // Update the state of the app
+                // ...
+
+                Navigator.pop(context);
+              },
+            ),
+            ListTile(
+              title: Text('Routes'),
+              onTap: () {
+                // Update the state of the app
+                // ...
+                Navigator.pop(context);
+              },
+            ),
+            Container(
+              margin: EdgeInsets.only(top: 16.0, left: 8.0),
+              decoration:
+                  BoxDecoration(border: new Border(bottom: new BorderSide())),
+              child: ListTile(
+                title: Text('Settings'),
               ),
             ),
             ListTile(
-              title: Text('Item 1'),
+              title: Text('Settings'),
               onTap: () {
                 // Update the state of the app
                 // ...
@@ -44,7 +73,7 @@ class _HomeScreenState extends State<HomeScreen> {
               },
             ),
             ListTile(
-              title: Text('Item 2'),
+              title: Text('Choose Theme'),
               onTap: () {
                 // Update the state of the app
                 // ...
@@ -69,6 +98,42 @@ class _HomeScreenState extends State<HomeScreen> {
       ),
     );
   }
+
+  getDrawerHeader() {
+    return DrawerHeader(
+      duration: Duration(seconds: 1),
+      child: Padding(
+        padding: const EdgeInsets.only(top: 16.0),
+        child: Container(
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.start,
+            crossAxisAlignment: CrossAxisAlignment.start,
+            verticalDirection: VerticalDirection.down,
+            children: <Widget>[
+              CircleAvatar(
+                  backgroundColor: Colors.cyanAccent,
+                  radius: 32.0,
+                  child: FlutterLogo(
+                    colors: Colors.red,
+                    size: 50.0,
+                  )),
+              Text(
+                "Main App Title",
+                style: TextStyle(fontSize: 24.0, color: Colors.white),
+              ),
+              Text(
+                "Subtitle goes here",
+                style: TextStyle(fontSize: 18.0, fontWeight: FontWeight.w100),
+              )
+            ],
+          ),
+        ),
+      ),
+      decoration: BoxDecoration(
+        color: Colors.blue,
+      ),
+    );
+  }
 }
 
 class _ListItem {
@@ -78,9 +143,9 @@ class _ListItem {
 }
 
 class CardView extends StatelessWidget {
-  final _ListItem Item;
+  final _ListItem item;
 
-  CardView(this.Item);
+  CardView(this.item);
 
   @override
   Widget build(BuildContext context) {
@@ -102,11 +167,11 @@ class CardView extends StatelessWidget {
                   mainAxisAlignment: MainAxisAlignment.start,
                   children: <Widget>[
                     Text(
-                      Item.Title,
+                      item.Title,
                       style: TextStyle(fontSize: 25.0, color: Colors.white),
                     ),
                     Text(
-                      Item.SubTitle,
+                      item.SubTitle,
                       style: TextStyle(fontSize: 20.0, color: Colors.black),
                     )
                   ],
