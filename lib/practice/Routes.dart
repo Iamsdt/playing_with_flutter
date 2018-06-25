@@ -12,7 +12,7 @@ class Routes extends StatelessWidget {
       length: 5,
       child: Scaffold(
         appBar: AppBar(
-          title: Text("Playing with Tab"),
+          title: Text("Routes"),
           bottom: TabBar(
             indicatorColor: Colors.orange,
             tabs: <Widget>[
